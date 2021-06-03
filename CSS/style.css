@@ -1,0 +1,84 @@
+
+.table {
+	display: table;
+	width: 100%;
+	table-layout: fixed;
+}
+
+.table div{
+	display: table-cell;
+	text-align: center;
+}
+
+body {
+	background-color: #03e3fc;
+}
+
+.glow {
+	backdrop-filter: contrast(40%);
+	border-radius: 5px;
+}
+fieldset {
+	position: absolute;
+	bottom: 5%;
+}
+
+input {
+	position: absolute;
+	background-color: cyan;
+	bottom: 50%;
+	left: 50%;
+	transform: translate(-50%,0);
+}
+.current {
+	position: absolute;
+	top: 0;
+	left: 50%;
+	transform: translate(-50%,0);
+	zoom: 2;
+}
+.over {
+	position: absolute;
+	bottom: 50%;
+	left: 50%;
+	transform: translate(-50%,0);
+	zoom: 5;
+	font-family: "Copper Plate", Copper, fantasy;
+	visibility: hidden;
+}
+.score {
+	position: absolute;
+	bottom: 40%;
+	left: 50%;
+	transform: translate(-50%,0);
+	zoom: 3;
+	font-family: "Copper Plate", Copper, fantasy;
+	visibility: hidden;
+}
+.controls {
+	position: absolute;
+	left: 0;
+	top: 40%;
+	backdrop-filter: contrast(30%);
+	width: auto;
+	height: auto;
+	zoom: 2;
+}
+.start {
+	position: absolute;
+	top: 35%;
+	left: 50%;
+	transform: translate(-50%,0);
+	zoom: 2;
+	backdrop-filter: contrast(30%);
+	border-radius: 30px;
+	padding: 10px;
+}
+.unselectable {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
